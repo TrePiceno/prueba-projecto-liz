@@ -127,7 +127,7 @@ p {
 }
 
 .grid-container .main-content .display {
-    width: 80%;
+    width: 80vw;
     background-color: #ab92bf;
     padding: 2rem;
     margin: 3rem auto;
