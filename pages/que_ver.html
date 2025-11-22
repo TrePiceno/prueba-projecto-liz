@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Projecto Liz</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/logo-gdl-favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- archivo CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container">
+                <a href="../index.html">
+                    <img src="../assets/img/logo gdl.png" alt="Logo Guadalajara">
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Planea
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./a_donde_ir.html">A dónde ir</a></li>
+                                <li><a class="dropdown-item" href="./que_ver.html">Qué ver</a></li>
+                                <li><a class="dropdown-item" href="./que_comer.html">Qué comer</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mejores_tours.html">Mejores Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./guadalajara_de_noche.html">Guadalajara de Noche</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+        <h1>Qué Ver</h1>
+        <p>
+            Guadalajara es la ciudad capital del Estado de Jalisco y centro natural de los estados ubicados en el Norte
+            y el Occidente de México. Su viaje puede iniciar en el centro histórico de la ciudad. De clima templado todo
+            el año y su arquitectura imponente hace de esta ciudad la más importante por su desarrollo económico y
+            cultural de Latino América.
+        </p>
+
+        <h2>Eventos principales</h2>
+
+        <section class="container-que-ver py-4">
+            <div class="text-content">
+                <h3>Calaverandia</h3>
+                <p>
+                    Guadalajara ahora en estas fechas celebra el Día de Muertos con una variedad de eventos que incluyen el
+                    parque temático Calaverandia, desfiles masivos como el Desfile Día de Muertos Guadalajara y el Desfile de
+                    Catrinas y Catrines en Santa Tere, y celebraciones en espacios culturales como la Casa Museo López Portillo
+                    y el Museo de la Ciudad. Estos eventos combinan la tradición con espectáculos, gastronomía, arte y
+                    activaciones culturales para honrar a los difuntos.
+                </p>
+            </div>
+            <video src="../assets/img/vid muertos.mp4" autoplay muted loop></video>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="newsletter">
+            <div class="newsletter-item newsletter-form">
+                <div class="newsletter-item-img">
+                    <img src="../assets/img/compu.jpg" alt="Mano escribiendo en laptop">
+                </div>
+                <div class="newsletter-form-suscribe">
+                    <h4>Suscribete a nuestro boletín informativo</h4>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Escribe un correo">
+                    <button>Enviar</button>
+                </div>
+            </div>
+            <div class="newsletter-item">
+                <p>Este sitio fue creado por Liz Dayana para Coderhouse. &copy; Todos los derechos reservados</p>
+            </div>
+        </section>
+    </footer>
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
