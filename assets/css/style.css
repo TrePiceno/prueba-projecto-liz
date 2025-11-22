@@ -371,6 +371,9 @@ p {
 
 /* Qué comer */
 
+.grid-container .main-content {
+    max-width: 90vw;
+}
 
 .grid-container .main-content .container-2 {
     height: 80vh;
