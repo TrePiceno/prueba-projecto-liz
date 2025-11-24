@@ -1,0 +1,20 @@
+@use "../base/variables";
+
+/* A Donde Ir */
+
+.card-body {
+    .card-link {
+        text-decoration: none;
+        color: variables.$color-enlaces;
+        border: solid 1px variables.$color-border;
+        border-radius: 7px;
+        padding: 4px 15px;
+        transition: background 800ms ease;
+
+        &:hover {
+            background: variables.$color-hover;
+            color: white;
+            border: none
+        }
+    }
+}

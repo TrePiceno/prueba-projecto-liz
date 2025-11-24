@@ -1,0 +1,85 @@
+@use "../base/variables";
+@use "../utils/extends";
+
+/* Estilos Inicio */
+
+.main-content  {
+    .hero {
+        margin: 2rem 0;
+    }
+
+    .feature {
+        margin: 4rem 0;
+        width: 100%;
+        color: white;
+
+        --r: 40px;
+        background: variables.$color-primario;
+        border-radius: var(--r) 0/calc(2*var(--r)) 0;
+        padding-block: var(--r);
+        --_m: #0000 100%, #000 calc(100% + 1px);
+        mask:
+            conic-gradient(#000 0 0) content-box,
+            radial-gradient(var(--r) at 100% 100%, var(--_m)) 0 100% no-repeat,
+            radial-gradient(var(--r) at 0 0, var(--_m)) 100% 0 no-repeat;
+        mask-size: var(--r) var(--r);
+
+        .feature-item {
+            border-bottom: 1px dotted white;
+            border-top: 1px dotted white;
+            width: 300px;
+            line-height: 2rem;
+        }
+    }
+
+    .feature-container {
+        @extend %flex-wrap;
+        padding-bottom: 4rem;
+    }
+
+    section {
+        .card-container {
+            @extend %flex-wrap;
+            padding: 3rem 1rem;
+        }
+    }
+
+    .display {
+        width: 61.5vw;
+        background-color: variables.$color-primario;
+        padding: 2rem;
+        margin: 3rem auto;
+        color: white;
+        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+
+        h2 {
+            border-bottom: 1px solid white;
+            line-height: 4rem;
+            margin: 0;
+        }
+
+        .display-container {
+            @extend %flex-wrap;
+        }
+    }
+
+}
+
+.card-container {
+    .card-item {
+        background-color: #f4f7f6;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 1 1 280px;
+        max-width: 320px;
+        border-left: 8px solid variables.$color-acento;
+    }
+}
+
+.display-container {
+    .display-item {
+        width: 400px;
+    }
+}

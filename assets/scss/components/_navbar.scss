@@ -1,0 +1,26 @@
+@use "../base/variables";
+
+nav {
+    img {
+        width: 190px;
+        margin: 0;
+    }
+}
+
+.navbar-nav {
+    li {
+        a {
+            text-decoration: none;
+            font-family: variables.$fuente-primaria;
+            color: variables.$color-enlaces;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+
+            &:hover {
+                color: variables.$color-hover;
+            }
+        }
+    }
+}

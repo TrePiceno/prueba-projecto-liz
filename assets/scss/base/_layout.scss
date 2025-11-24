@@ -1,0 +1,29 @@
+@use "sass:map";
+@use "../utils/maps";
+
+.grid-container {
+    display: map.get(maps.$display, grid);
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header header"
+        ". main ."
+        "footer footer footer";
+    min-height: 100vh;
+    padding: 0 1rem;
+
+    .header {
+        grid-area: header;
+    }
+
+    .main-content {
+        grid-area: main;
+    }
+
+    .footer {
+        grid-area: footer;
+        margin-top: 4rem;
+    }
+
+}

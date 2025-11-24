@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "./maps";
+
+%flex-wrap {
+    display: map.get(maps.$display, flex);
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+%position-abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

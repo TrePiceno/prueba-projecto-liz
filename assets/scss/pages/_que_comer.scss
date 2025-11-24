@@ -1,0 +1,68 @@
+@use "../base/variables";
+@use "../utils/mixins";
+@use "../utils/extends";
+@use "sass:map";
+@use "../utils/maps";
+
+/* Qué comer */
+
+.main-content {
+    max-width: 90vw;
+    .container-2 {
+        height: 80vh;
+        position: relative;
+    }
+}
+
+
+.container {
+    .container-que-comer-1 {
+        @include mixins.flex(flex, space-evenly, center, 2rem);
+        height: 70vh;
+
+        img {
+            width: 400px;
+        }
+
+        .text-content {
+            width: 400px;
+            background-color: whitesmoke;
+            padding: 2rem;
+            border: 8px solid variables.$color-border;
+        }
+
+
+    }
+
+    .bg-que-ver {
+        @extend %position-abs-center;
+        background-color: variables.$color-primario;
+        width: 500px;
+        height: 650px;
+        z-index: -1;
+    }
+
+    .container-que-comer-2 {
+        margin: 0 auto;
+        padding: 2rem;
+        display: map.get(maps.$display, flex);
+        justify-content: space-evenly;
+        gap: 1.5rem;
+
+        img {
+            display: map.get(maps.$display, block);
+            width: 500px;
+            object-fit: cover;
+        }
+
+        .text-content {
+            width: 500px;
+            line-height: 1.7rem;
+            font-size: clamp(.9rem, 1vw, 1rem);
+            background-color: variables.$color-acento;
+            border: 8px solid variables.$color-border;
+            padding: 1.5rem;
+        }
+    }
+
+}

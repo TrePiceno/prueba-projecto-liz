@@ -1,0 +1,60 @@
+@use "../base/variables";
+@use "../utils/mixins";
+@use "sass:map";
+@use "../utils/maps";
+
+/* Footer */
+.footer {
+    .newsletter {
+        display: map.get(maps.$display, flex);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form {
+        @include mixins.flex(map.get(maps.$display, flex), center, flex-start, 2rem);
+        flex-wrap: wrap;
+
+        .newsletter-form-suscribe {
+            display: map.get(maps.$display, flex);
+            flex-direction: column;
+            width: 300px;
+        }
+    }
+}
+
+.newsletter-item-img {
+    img {
+        width: 300px;
+    }
+}
+
+
+.newsletter-form-suscribe {
+    input {
+        border: none;
+        border-radius: 3px;
+        margin: .5rem 0;
+        padding-left: 10px;
+    }
+
+    button {
+        border: none;
+        border-radius: 3px;
+        width: 100px;
+        padding: .3rem 0;
+        background-color: variables.$color-acento;
+        color: white;
+
+            &:hover {
+            background-color: variables.$color-hover;
+            }
+    }
+}
+
+.newsletter-item {
+    p {
+        margin-top: 1.5rem;
+        font-size: .8rem;
+    }
+}

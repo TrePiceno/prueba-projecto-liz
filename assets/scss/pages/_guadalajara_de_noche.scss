@@ -1,0 +1,38 @@
+@use "../base/variables";
+@use "../utils/extends";
+@use "sass:map";
+@use "../utils/maps";
+
+/* Guadalajara de Noche */
+
+.card {
+    div {
+        p {
+            font-size: variables.$text-dinamico;
+            line-height: 1.7rem;
+        }
+    }
+}
+
+.card-gdl-noche {
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid variables.$color-border;
+    padding: 1rem;
+    @extend %flex-wrap;
+    flex-direction: row;
+    width: fit-content;
+
+    img {
+        display: map.get(maps.$display, block);
+        width: 500px;
+        height: auto;
+    }
+
+    p {
+        width: 300px;
+        line-height: 1.7rem;
+        font-size: variables.$text-dinamico;
+    }
+}

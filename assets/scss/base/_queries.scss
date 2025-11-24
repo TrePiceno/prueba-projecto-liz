@@ -1,0 +1,138 @@
+/* Media queries */
+
+@media (max-width: 991px) {
+
+    nav {
+        img {
+            width: 150px;
+        }
+    }
+
+    .card-gdl-noche {
+        img {
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+
+    .grilla{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "portafolio1 portafolio2"
+        "portafolio3 portafolio4"
+        "portafolio5 portafolio6"
+        "portafolio7 portafolio7"
+        ;
+        margin-bottom: 4rem;
+    }
+
+    .container-2 {
+        margin-bottom: 30rem;
+    }
+
+    .bg-que-ver {
+        height: 1000px;
+        top: 80%;
+    }
+
+    .container-que-comer-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-que-comer-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .grilla{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "portafolio1"
+        "portafolio2"
+        "portafolio3"
+        "portafolio4"
+        "portafolio5"
+        "portafolio6"
+        "portafolio7"
+        ;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .display {
+        width: 75vw;
+    }
+
+    nav {
+        img {
+            width: 130px;
+        }
+    }
+
+    .container-que-ver {
+        video {
+            width: 300px;
+        }
+    }
+
+    .container-que-ver {
+        .text-content {
+        width: 300px;
+        }
+    }
+
+    .container {
+
+        .container-que-comer-1 {
+
+            img {
+            width: 300px;
+            }
+
+            .text-content {
+            width: 300px;
+            }
+        }
+
+        .bg-que-ver {
+            width: 350px;
+        }
+
+        .container-que-comer-2 {
+            img {
+                width: 300px;
+            }
+
+            .text-content {
+                width: 300px;
+            }
+        }
+
+    }
+
+
+    .card-gdl-noche {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+        
+        p {
+            width: 100%;
+        }
+    }
+    
+
+
+}

@@ -1,0 +1,18 @@
+// Base
+@use "./base/general";
+@use "./base/layout";
+
+// Componentes
+@use "./components/navbar";
+@use "./components/footer";
+
+// Pages
+@use "./pages/_index";
+@use "./pages/a_donde_ir";
+@use "./pages/que_ver";
+@use "./pages/que_comer";
+@use "./pages/mejores_tours";
+@use "./pages/guadalajara_de_noche";
+
+// Media queries
+@use "./base/queries";
